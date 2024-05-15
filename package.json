@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "bun index.ts",
+    "deploy": "rsync -zrP --delete  --exclude-from '.rsyncIgnore' ./ ysj@jp.ysj.zone:~/banzhuan/"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "koa": "^2.15.2",
+    "serve-static-bun": "^0.5.3"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0"
+  }
+}
